@@ -12,11 +12,14 @@ def teacherSearch(df, TLName, TFName):
 def busSearch(df, busNum):
     print(df.loc[df['Bus'] == busNum])
 
+def gradeSearch(df, grade):
+    print(df.loc[df['Grade'] == grade])
+
 def main():
     data_dir = "students.txt"
     df_students = pd.read_csv(data_dir, header=None, names=['StLastName', 'StFirstname', 
         'Grade', 'Classroom', 'Bus', 'GPA', 'TLastName', 'TFirstName'])
-    busSearch(df_students, 52)
+    gradeSearch(df_students, 2)
 
 if __name__ == "__main__":
     main()
