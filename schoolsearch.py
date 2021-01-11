@@ -7,8 +7,7 @@ def lastNameBusSearch(df, lastName):
     df_new = df.loc[df['StLastName' == lastName]]
 
 def teacherSearch(df, TLName, TFName):
-    #print(df.query('TLastName=="TLName" & TFirstName=="TFName" ', inplace=True))
-    print(df.loc[df['TLastName' == TLName], df['TFirstName' == TFName]])
+    print(df[(df['TLastName']==TLName) & (df['TFirstName']==TFName)])
 
 
 def main():
