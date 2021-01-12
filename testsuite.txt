@@ -185,7 +185,7 @@ Average: 3
 // 5:  0
 // 6:  21
 
-G: 10
+Info
 
 // TC-18
 // Testing Requirement E1
@@ -193,7 +193,7 @@ G: 10
 // expected output:
 // No students in this grade
 
-F
+G: 10
 
 // TC-19
 // Testing Requirement E1
@@ -201,8 +201,28 @@ F
 // expected output:
 // Type your command:
 
+F
 
+// TC-20
+// Testing Requirement E1
+// short form command name
+// expected output:
+// Bus route not found
 
+B: 2
 
-Info
+// TC-21
+// Testing Requirement E1
+// long form command name
+// expected output:
+// Type your command:
 
+Student: CORKER W
+
+// TC-22
+// Testing Requirement E1
+// long form command name
+// expected output:
+// No teacher with this last name exists
+
+T: SMITH
