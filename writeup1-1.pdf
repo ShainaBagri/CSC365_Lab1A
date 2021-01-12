@@ -20,5 +20,13 @@ Finding number of students              Shaina          10min       1/10 7:30pm-
 Printing (in proper format)             Shaina          20min       1/11 1:00pm-1:20pm
 Parsing command line                    Piper           30min       1/11 1:00pm-1:30pm
 Error handling files                    Shaina          5min        1/11 8:00pm-8:05pm
-Error handling commands                 Piper           5min        1/11 8:00pm-8:05pm
+Error handling commands                 Piper           10min       1/11 8:00pm-8:05pm
 
+Notes on testing
+Task                        Person        Bugs Found               Duration     Date and Time
+
+Parsing command line        Piper         Index out of bound       5min         1/11 8:05pm-8:10pm
+Parsing command line        Piper         Input not read as int    15min        1/11 8:10pm-8:25pm
+
+Final notes:
+While commands are case sensitive, user inputs such as last names are not.
