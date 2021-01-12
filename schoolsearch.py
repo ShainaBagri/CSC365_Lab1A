@@ -38,19 +38,23 @@ def highestGPA(df, grade):
     print(new_df.loc[new_df['GPA'] == maxGPA])
 
 def numStudents(df):
-    #print((df['Grade'].value_counts()).reindex(df.Grade.unique(), fill_value = 0))
-    grades = df.Grade.unique()
-    check = [0, 0, 0, 0, 0, 0, 0]
-    for i in range(7):
-        if i not in grades:
-            check[i] = 1
-     
+    print("0: ", len(df[df['Grade'] == 0]))
+    print("1: ", len(df[df['Grade'] == 1]))
+    print("2: ", len(df[df['Grade'] == 2]))
+    print("3: ", len(df[df['Grade'] == 3]))
+    print("4: ", len(df[df['Grade'] == 4]))
+    print("5: ", len(df[df['Grade'] == 5]))
+    print("6: ", len(df[df['Grade'] == 6]))
 
 def main():
     data_dir = "students.txt"
-    df_students = pd.read_csv(data_dir, header=None, names=['StLastName', 'StFirstName', 
-        'Grade', 'Classroom', 'Bus', 'GPA', 'TLastName', 'TFirstName'])
-    
+    try:
+        df_students = pd.read_csv(data_dir, header=None, names=['StLastName', 'StFirstName', 
+            'Grade', 'Classroom', 'Bus', 'GPA', 'TLastName', 'TFirstName'])
+    except IOError as e:
+        print(e)
+        exit()
+
     quit = False
     while not quit:
         command = str(input("Type your command: "))
@@ -99,7 +103,7 @@ def main():
     #lowestGPA(df_students, 1)
     #highestGPA(df_students, 3)
     #highestGPA(df_students, 1)
-    numStudents(df_students)
+    #numStudents(df_students)
 
 if __name__ == "__main__":
     main()
