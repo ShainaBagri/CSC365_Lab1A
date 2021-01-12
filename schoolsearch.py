@@ -15,11 +15,23 @@ def busSearch(df, busNum):
 def gradeSearch(df, grade):
     print(df.loc[df['Grade'] == grade])
 
+def avgGPA(df, grade):
+    new_df = df.loc[df['Grade'] == grade]
+    print(new_df["GPA"].mean())
+
+def lowestGPA(df, grade):
+    new_df = df.loc[df['Grade'] == grade]
+    print(new_df["GPA"].min())
+
+def highestGPA(df, grade):
+    new_df = df.loc[df['Grade'] == grade]
+    print(new_df["GPA"].max())
+
 def main():
     data_dir = "students.txt"
-    df_students = pd.read_csv(data_dir, header=None, names=['StLastName', 'StFirstname', 
+    df_students = pd.read_csv(data_dir, header=None, names=['StLastName', 'StFirstName', 
         'Grade', 'Classroom', 'Bus', 'GPA', 'TLastName', 'TFirstName'])
-    gradeSearch(df_students, 2)
+    highest(df_students, 2)
 
 if __name__ == "__main__":
     main()
