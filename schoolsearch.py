@@ -59,18 +59,24 @@ def main():
     while not quit:
         command = str(input("Type your command: "))
         split = command.split()
+
         if split[0]=="S:" or split[0]=="Student:":
-            lastName = split[1]
+            lastName = split[1].upper()
             if len(split) != 3:
                 lastNameSearch(df_students, lastName)
             elif len(split) == 3 and (split[2] == "B" or split[2] == "Bus"):
                 lastNameBusSearch(df_students, lastName)
+            else:
+                continue
+
         elif split[0]=="Teacher:" or split[0]=="T:":
-            lastName = split[1]
+            lastName = split[1].upper()
             teacherSearch(df_students, lastName)
+
         elif split[0]=="B:" or split[0]=="Bus:":
             number = int(split[1])
             busSearch(df_students, number)
+
         elif split[0]=="Grade:" or split[0]=="G:":
             number = int(split[1])
             if len(split) != 3:
@@ -79,14 +85,29 @@ def main():
                 highestGPA(df_students, number)
             elif split[2]=="Low" or split[2]=="L":
                 lowestGPA(df_students, number)
+            else:
+                continue
+
         elif split[0]=="A:" or split[0]=="Average:":
             number = int(split[1])
             avgGPA(df_students, number)
+
         elif split[0]=="I" or split[0]=="Info":
             numStudents(df_students)
+
         elif split[0]=="Q" or split[0]=="Quit":
             quit = True
 
+<<<<<<< HEAD
+=======
+        else:
+            continue
+
+    #lastNameSearch(df_students, "CORKER")
+    #lastNameSearch(df_students, "COMO")
+    #lastNameBusSearch(df_students, "CORKER")
+    #lastNameBusSearch(df_students, "COMO")
+>>>>>>> 67dd538d1d26aab827fae218691ba47d8d9612e5
     #teacherSearch(df_students, "CHIONCHIO", "PERLA")
     #teacherSearch(df_students, "COOL", "REUBEN")
     #gradeSearch(df_students, 1)

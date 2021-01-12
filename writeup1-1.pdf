@@ -1,0 +1,24 @@
+Team Members: Piper Feldman and Shaina Bagri
+We used Python to develop since Shaina has experience using the pandas package in Python from her data science class.
+Piper had experience using the Visual Studio Code Liveshare, so we developed in a VS Code environment. We also used GitHub
+and git to facilitate collaboration on the code development.
+We decided to split up each command into a separate function to make the code more readable and easier to debug. We primarily
+used the dataframe structure that comes with the pandas package. This structure allowed us to easily parse the csv file into a 
+database structure.
+
+Task Log
+Task                                    Person          Duration    Date and Time
+Create Database                         Shaina          5min        1/10 6:00pm-6:05pm
+Searching for last name                 Shaina          5min        1/10 6:05pm-6:10pm
+Searching for last name and bus         Shaina          5min        1/10 6:15pm-6:20pm
+Searching for teacher name              Piper           5min        1/10 6:30pm-6:35pm
+Searching for bus number                Piper           5min        1/10 6:35pm-6:40pm
+Searching for grade                     Piper           5min        1/10 7:00pm-7:05pm
+Finding avg GPA                         Piper           15min       1/10 7:05pm-7:20pm
+Finding low/high GPA                    Piper           15min       1/10 7:20pm-7:35pm
+Finding number of students              Shaina          10min       1/10 7:30pm-7:40pm
+Printing (in proper format)             Shaina          20min       1/11 1:00pm-1:20pm
+Parsing command line                    Piper           30min       1/11 1:00pm-1:30pm
+Error handling files                    Shaina          5min        1/11 8:00pm-8:05pm
+Error handling commands                 Piper           5min        1/11 8:00pm-8:05pm
+
