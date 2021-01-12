@@ -8,8 +8,8 @@ def lastNameBusSearch(df, lastName):
     print(df.loc[df['StLastName'] == lastName, 
         ['StLastName', 'StFirstName', 'Bus']])
 
-def teacherSearch(df, TLName, TFName):
-    print(df.loc[(df['TLastName']==TLName) & (df['TFirstName']==TFName), 
+def teacherSearch(df, TLName):
+    print(df.loc[(df['TLastName']==TLName), 
         ['StLastName', 'StFirstName']])
 
 def busSearch(df, busNum):
@@ -87,10 +87,6 @@ def main():
         elif split[0]=="Q" or split[0]=="Quit":
             quit = True
 
-    #lastNameSearch(df_students, "CORKER")
-    #lastNameSearch(df_students, "COMO")
-    #lastNameBusSearch(df_students, "CORKER")
-    #lastNameBusSearch(df_students, "COMO")
     #teacherSearch(df_students, "CHIONCHIO", "PERLA")
     #teacherSearch(df_students, "COOL", "REUBEN")
     #gradeSearch(df_students, 1)
