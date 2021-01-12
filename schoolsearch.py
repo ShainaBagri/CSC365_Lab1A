@@ -130,24 +130,6 @@ def main():
         else:
             continue
 
-    #lastNameSearch(df_students, "CORKER")
-    #lastNameSearch(df_students, "COMO")
-    #lastNameBusSearch(df_students, "CORKER")
-    #lastNameBusSearch(df_students, "COMO")
-    #teacherSearch(df_students, "CHIONCHIO", "PERLA")
-    #teacherSearch(df_students, "COOL", "REUBEN")
-    #gradeSearch(df_students, 1)
-    #gradeSearch(df_students, 3)
-    #busSearch(df_students, 52)
-    #busSearch(df_students, 56)
-    #avgGPA(df_students, 1)
-    #avgGPA(df_students, 3)
-    #lowestGPA(df_students, 3)
-    #lowestGPA(df_students, 1)
-    #highestGPA(df_students, 3)
-    #highestGPA(df_students, 1)
-    #numStudents(df_students)
-    
 
 if __name__ == "__main__":
     main()
