@@ -45,15 +45,14 @@ def main():
         elif split[0]=="Teacher:" or split[0]=="T:":
             lastName = split[1]
             teacherSearch(df_students, lastName)
-        elif split[0]=="Grade:" or split[0]=="G:":
-            number = split[1]
-            gradeSearch(df_students, number)
         elif split[0]=="B:" or split[0]=="Bus:":
-            number = split[1]
+            number = int(split[1])
             busSearch(df_students, number)
         elif split[0]=="Grade:" or split[0]=="G:":
-            number = split[1]
-            if split[2]=="High" or split[2]=="H":
+            number = int(split[1])
+            if len(split) != 3:
+                gradeSearch(df_students, number)
+            elif split[2]=="High" or split[2]=="H":
                 highestGPA(df_students, number)
             elif split[2]=="Low" or split[2]=="L":
                 lowestGPA(df_students, number)
